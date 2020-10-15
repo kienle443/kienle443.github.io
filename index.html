@@ -5,15 +5,18 @@
 	</head>
   <body>
     <form id="demo-form">
-		<button class="g-recaptcha" 
-        data-sitekey="6LdGHNcZAAAAAPsm9xKCfbHSVCH1TCdTZFShOK6E" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
+		<div class="g-recaptcha"
+			data-sitekey="6Ld2w9cZAAAAAIh-MgN5GwG7wlSAfzcPepdVsvsL"
+			data-callback="onSubmit"
+			data-size="invisible">
+		</div>
+		<button onclick="onSubmit()" value="Submit">Submit</button>
 	</form>
 	
 	<script>
 		   function onSubmit(token) {
 			 document.getElementById("demo-form").submit();
+			 grecaptcha.execute();
 		   }
 		</script>
   </body>
