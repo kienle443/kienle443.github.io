@@ -15,8 +15,9 @@
 	
 	<script>
 		   function onSubmit(token) {
+			grecaptcha.execute();
 			 document.getElementById("demo-form").submit();
-			 grecaptcha.execute();
+			 
 		   }
 		</script>
   </body>
