@@ -1,13 +1,13 @@
 <html>
 	<head>
-		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		
 	</head>
   <body>
     <form id="demo-form" action="http://localhost:3000/users" method="POST">
 		<div class="g-recaptcha"
 			data-sitekey="6Ld2w9cZAAAAAIh-MgN5GwG7wlSAfzcPepdVsvsL"
-			data-callback="onSubmit"
+			data-callback="onSubmitt"
 			data-size="invisible">
 		</div>
 		<button onclick="onSubmit()" value="Submit">Submit</button>
@@ -15,7 +15,7 @@
 	
 	<script>
 		   function onSubmit(token) {
-			grecaptcha.execute();
+				grecaptcha.execute();
 			 document.getElementById("demo-form").submit();
 			 
 		   }
