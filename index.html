@@ -5,11 +5,10 @@
 	</head>
   <body>
     <form id="demo-form" action="http://localhost:3000/users" method="POST">
-		<div class="g-recaptcha"
-			data-sitekey="6Ld2w9cZAAAAAIh-MgN5GwG7wlSAfzcPepdVsvsL"
-			data-callback="onSubmitt"
-			data-size="invisible">
-		</div>
+		<div id='recaptcha' class="g-recaptcha"
+          data-sitekey="6Ld2w9cZAAAAAIh-MgN5GwG7wlSAfzcPepdVsvsL"
+          data-callback="onSubmit2"
+          data-size="invisible"></div>
 		<button onclick="onSubmit()" value="Submit">Submit</button>
 	</form>
 	
