@@ -14,8 +14,10 @@
 	</form>
 	
 	<script>
-		   function onSubmit(token) {
+		   function onSubmit(e) {
+			   	e.preventDefault();
 				grecaptcha.execute();
+				
 			 //document.getElementById("demo-form").submit();
 			 
 		   }
