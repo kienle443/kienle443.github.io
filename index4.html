@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		
+	</head>
+  <body>
+	<form id="demo-form" action="http://localhost:3000/users" method="POST">
+		<input type="text" name="usr" id="usr">
+		<div id='recaptcha' class="g-recaptcha"
+          data-sitekey="6Ld2w9cZAAAAAIh-MgN5GwG7wlSAfzcPepdVsvsL"
+          data-callback="onSubmit2"
+          data-size="invisible"></div>
+		<button onclick="onSubmit()">Submit</button>
+	</form>
+	
+	<script>
+		   function onSubmit(e) {
+			   	e.preventDefault();
+				grecaptcha.execute();
+				
+			 //document.getElementById("demo-form").submit();
+			 
+		   }
+		</script>
+  </body>
+</html>
