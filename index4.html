@@ -10,7 +10,7 @@
           data-sitekey="6Ld2w9cZAAAAAIh-MgN5GwG7wlSAfzcPepdVsvsL"
           data-callback="onSubmit2"
           data-size="invisible"></div>
-		<button onclick="onSubmit()">Submit</button>
+		<button type="button" onclick="onSubmit()">Submit</button>
 	</form>
 	
 	<script>
@@ -20,6 +20,10 @@
 				
 			 //document.getElementById("demo-form").submit();
 			 
+		   }
+
+		   function onSubmit2() {
+			document.getElementById("demo-form").submit();
 		   }
 		</script>
   </body>
